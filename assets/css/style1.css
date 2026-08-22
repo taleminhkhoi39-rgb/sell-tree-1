@@ -1,0 +1,307 @@
+* {
+  margin: 0; /* xóa khoảng cách mặc định của trình duyệt */
+  box-sizing: border-box;
+  /* giúp kích thước phần tử bao gồm cả padding và border, dễ kiểm soát bố cục hơn */
+}
+
+.container {
+  width: 1024px;
+  margin: auto; /* căn phần tử vào giữa. */
+}
+
+/* HEADER */
+#header {
+  background-color: white;
+  padding: 40px 0;
+  /* khoảng cách bên trong trên dươi 40,trái phải 0 */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: black;
+  text-decoration: none; /* loại bỏ gạch chân */
+  margin-left: 4px;
+  /*  khoảng cách bên ngoài ở phía bên trái của một phần tử cách 50px*/
+  padding: 0 10px;
+}
+
+.nav-bar a:hover {
+  /* khi chạm vào sẽ đổi màu */
+  color: green;
+}
+
+.register a {
+  /*   width: 190x; */
+  color: black;
+  text-decoration: none; /* loại bỏ gạch chân */
+  margin-left: 4px;/* khoảng cách bên ngoài bên trái là 4px */
+  padding: 0 10px;
+}
+
+.register a:hover {
+  color: green;
+}
+/* MUỐN CHO 1THK LUN Ở GIỮA THÌ 2 THK CÒN LẠI PHẢI = NHAU */
+
+.logo {
+  margin: 0; /* trên dưới =0, trái phải tự động chia đều */
+  font-size: 30px; /* chữ to hơn 30px */
+}
+
+/* -----------------------CONTENT( MAIN)-----------------------------------------------   */
+
+.heading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* căn các phần tử sang phải */
+  gap: 15px;
+}
+
+#main {
+  height: fit-content; /* kích thước phần tử sẽ vừa đủ với nội dung bên trong */
+  margin-top: -115px; /* số dương thì hình kéo xuống còn âm thì kéo lên */
+  padding-top: 250px; /* làm cho chữ h2 xuống dưới */
+  background-image: url("/assets/images/logoback-spck1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* phóng to ảnh nền sao cho ảnh phủ kín toàn bộ phần tử. */
+  background-color: white;
+}
+
+#main .container {
+  /*   position: relative; */
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-section h2 {
+  font-size: 80px;
+  color: #2d2a24;
+  font-weight: 500;
+  font-family: "Marcellus SC", serif;
+}
+
+.heading-section p {
+  text-align: right;
+  color: #2d2a24ba;
+  width: 450px;
+  font-size: 18px;
+}
+
+.heading-section .option {
+  font-size: 14px;
+  font-family: "Cormorant", serif;
+  margin-right: 230px;
+  margin-top: 15px;
+  padding: 20px 48px;
+}
+
+.introduc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 35px;
+  margin-top: 250px;
+  align-items: center;
+}
+
+.introduc h3 {
+  font-size: 62px;
+  color: green;
+  font-family: "Stalemate", cursive;
+}
+
+.introduc h2 {
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+}
+
+.product h3 {
+  color: #7b7873;
+  text-align: center;
+}
+
+.product {
+  padding-top: 30px;
+}
+
+.product_card {
+  width: 32%; /* là 32% của container vì 1 hàng có ba cái */
+}
+
+.product img {
+  /* là 100a5 của cái product card */
+  width: 100%;
+}
+
+.product_cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list_product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_content {
+  text-align: center;
+}
+
+.image1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 20px; /* khoảng cach trái phải trên dưới trong image*/
+}
+
+.image1 img {
+  width: 33.33%;
+  height: 400px;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 35px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.end h3 {
+  font-size: 62px;
+  color: green;
+  font-family: "Stalemate", cursive;
+}
+
+.end h2 {
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+}
+
+.image2 img {
+  border-radius: 50%;
+}
+
+.image2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.picture1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.picture1 p {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.list_decorations {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.decoration {
+  margin-top: 40px;
+  flex: 1; /* mỗi khối chiếm đều không gian */
+  display: flex;
+  flex-direction: column; /* ảnh trên, chữ dưới */
+  align-items: center; /* căn giữa nội dung theo chiều ngang */
+  text-align: center; /* căn giữa chữ */
+}
+
+.decoration img {
+  width: 100%; /* ảnh vừa khung decoration */
+  max-width: 450px; /* giới hạn ảnh nhỏ lại */
+  height: auto; /* giữ tỉ lệ gốc */
+  object-fit: cover; /* cắt gọn nếu ảnh không cùng tỉ lệ */
+}
+
+.decoration_content {
+  margin-top: 10px; /* khoảng cách giữa ảnh và chữ */
+}
+
+.decoration_content h4 {
+  font-family: "Source Sans Pro", cursive;
+}
+.decoration_content h2 {
+  font-family: "Cormorant", serif;
+  color: #47443d;
+}
+
+#border {
+  margin-top: 40px;
+  height: 300px;
+  background-image: url(../images/logo_border.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* căn giữa dọc */
+  align-items: center;
+}
+
+#border h2 {
+  color: white;
+  font-family: "Stalemate", cursive;
+  font-size: 70px;
+}
+
+#border h1 {
+  color: white;
+  font-family: "Cormorant", serif;
+  font-size: 50px;
+}
+/* -----------------------------FOOTER-------------------------------- */
+
+#footer {
+  margin-top: 45px; /* cách bên trên 45px */
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer_brand p {
+  color: #878581;
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer_contact p {
+  color: #878581;
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button_content a {
+  color: #878581;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-decoration: none; /* m6t1 gạch chân */
+}

@@ -1,0 +1,105 @@
+.information_product {
+    width: 1024px;
+    margin: 80px auto 0;
+/* cách phía trên 80px,auto tự động cách trái/phải để căn giữa */
+/* phía dưới không cách thêm */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* HÌNH BÊN TRÁI */
+
+
+.information_product img{
+    width: 45%;
+}
+
+
+/* THÔNG TIN BÊN PHẢI */
+.information {
+    width: 48%;
+    padding-top: 10px;
+}
+
+
+/* GIÁ */
+.information h3 {
+    color: #6f8b6f;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+/* MÔ TẢ */
+.information p {
+    color: #999;
+    margin-bottom: 25px;
+}
+
+
+/* CATEGORY + TAG */
+.information h4 {
+    color: #777;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.information button {
+    font-family: "Cormorant",serif;
+    width: 215px;
+    height: 60px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    background-color: #698467;
+}
+
+.information p {
+    margin-top: 20px;
+    font-family: "Source Sans Pro", monospace;
+}
+
+.heading {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.heading h3{
+    font-family: "Cormorant",serif;
+    font-size: 30px;
+    color: #7b7873;
+}
+
+.passage {
+    display: flex;
+    justify-content: center;
+}
+
+.passage p {
+    color: #7b7873;
+    font-family: "Source Sans Pro", monospace;
+    width: 1300px;
+    margin-top: 20px;
+}
+
+.heading2 h3{
+    margin-top: 15px;
+    font-size: 62px;
+    color:green;
+    display: flex;
+    justify-content: center;
+    font-family:"Stalemate", cursive;
+}
+
+.product img {
+    width: 50%;
+    display: block;/* biến phần tử thành dạng khối */
+    margin: auto;/* tự động căn phần tử vào giữa */
+}
+
