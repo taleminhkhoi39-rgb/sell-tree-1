@@ -9,25 +9,47 @@
 
   <body>
     <div id="main">
-      <form action="" id="register-form">
+      <form action="" id="register-form" autocomplete="off">
         <h2>Register</h2>
 
         <div class="input-group">
           <label for="username">Username</label>
-          <input type="text" id="username" />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            autocomplete="username"
+          />
         </div>
 
         <div class="input-group">
           <label for="email">Email</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" name="email" autocomplete="email" />
         </div>
 
         <div class="input-group">
           <label for="password">Password</label>
-          <input type="password" id="password" />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="new-password"
+          />
         </div>
 
-        <button class="register-btn">Register</button>
+        <div class="input-group">
+          <label for="confirm">Confirm</label>
+          <input
+            type="password"
+            id="confirm"
+            name="confirm"
+            autocomplete="new-password"
+          />
+        </div>
+
+        <p id="msg"></p>
+
+        <button type="submit" class="register-btn">Register</button>
 
         <p class="nav">
           If you have a account
@@ -35,5 +57,6 @@
         </p>
       </form>
     </div>
+    <script src="../assets/js/auth.js"></script>
   </body>
 </html>
